@@ -19,6 +19,7 @@ test('should work with promise and async/await', async () => {
 test('should handle errors', async () => {
   async function testprom() {
     try {
+      // eslint-disable-next-line no-unused-vars
       const loadAwait = await GameSavingLoader.load();
       const parseAwait = await JSON.parse(this.loadAwait);
       return parseAwait;
